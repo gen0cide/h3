@@ -1,0 +1,466 @@
+.
+├── blue_team
+│   ├── monitoring
+│   │   ├── host
+│   │   │   ├── windows
+│   │   │   ├── linux
+│   │   │   └── macos
+│   │   ├── application
+│   │   │   ├── web
+│   │   │   ├── enterprise
+│   │   │   └── remote_access
+│   │   ├── network
+│   │   │   ├── packet_capture
+│   │   │   │   ├── ha_and_scalability
+│   │   │   │   ├── common_tools
+│   │   │   │   └── source_spoofing_considerations
+│   │   │   └── valuable_protocols
+│   │   └── logging
+│   │       ├── architecture
+│   │       ├── formatting
+│   │       ├── processing
+│   │       ├── searching
+│   │       └── storage
+│   ├── detection
+│   │   ├── techniques
+│   │   │   ├── static_signature
+│   │   │   ├── anomaly_based
+│   │   │   ├── behavioral
+│   │   │   └── machine_learning
+│   │   ├── automation
+│   │   │   ├── apis
+│   │   │   └── scripting
+│   │   └── scalability
+│   ├── response
+│   │   ├── reverse_engineering
+│   │   │   ├── static_analysis
+│   │   │   ├── dynamic_analysis
+│   │   │   ├── evasion
+│   │   │   └── protocol_analysis
+│   │   ├── remediation
+│   │   │   ├── pyramid_of_pain
+│   │   │   ├── ir_life_cycle
+│   │   │   ├── containment_techniques
+│   │   │   └── eradication_principles
+│   │   └── crisis
+│   │       ├── communication
+│   │       ├── priority
+│   │       └── documentation
+│   ├── threat_intel
+│   │   ├── opsec
+│   │   │   ├── host
+│   │   │   ├── network
+│   │   │   ├── geographic_considerations
+│   │   │   ├── fingerprinting
+│   │   │   └── persona_management
+│   │   ├── ioc_sharing
+│   │   ├── traffic_light_protocol
+│   │   └── severities_vs_impact
+│   └── forensics
+│       ├── legal
+│       │   ├── chain_of_custody
+│       │   ├── privilege
+│       │   └── diligence_and_documentation
+│       ├── collection
+│       │   ├── desktop_oses
+│       │   ├── mobile_oses
+│       │   ├── network
+│       │   ├── memory
+│       │   └── encryption
+│       └── analysis
+│           ├── steganography
+│           ├── data_carving
+│           ├── memory
+│           ├── temporal_analysis
+│           ├── deobfuscation
+│           └── file_systems
+│               ├── boot_records
+│               ├── file_tables
+│               ├── inodes
+│               ├── encrypted_volumes
+│               └── slack_space
+├── red_team
+│   ├── objectives
+│   │   ├── scope
+│   │   ├── rules_of_engagement
+│   │   └── statement_of_work
+│   ├── osint
+│   ├── vulnerability_analysis
+│   ├── exploitation
+│   │   ├── remote
+│   │   ├── local_privilege_escalation
+│   │   ├── web
+│   │   └── phishing
+│   ├── attack
+│   │   ├── lateral_movement
+│   │   ├── tunneling
+│   │   ├── covering_tracks
+│   │   ├── avoiding_detection
+│   │   └── client_considerations
+│   ├── persist
+│   │   ├── windows
+│   │   ├── linux
+│   │   ├── macos
+│   │   ├── web
+│   │   ├── code
+│   │   └── configs
+│   ├── post_exploitation
+│   │   ├── files
+│   │   ├── os_creds
+│   │   ├── enterprise_creds
+│   │   └── application_creds
+│   └── implants
+│       ├── stagers_and_droppers
+│       ├── user_space_vs_kernel_space
+│       ├── local_vs_remote
+│       ├── reverse_vs_bind
+│       ├── command_and_control
+│       │   ├── covert_channels
+│       │   ├── avoiding_detection
+│       │   └── anti_tampering
+│       └── anti_re_techniques
+│           ├── packing_and_encrypting
+│           └── process_injection
+│               ├── macos
+│               ├── windows
+│               └── linux
+├── security_engineering
+│   ├── networking
+│   │   ├── osi_model
+│   │   ├── stateful_vs_stateless
+│   │   ├── important_protocols
+│   │   │   ├── csma_ca
+│   │   │   ├── csma_cd
+│   │   │   ├── 802_11
+│   │   │   ├── ethernet_ii_and_802_3
+│   │   │   ├── arp
+│   │   │   ├── icmp
+│   │   │   ├── ip
+│   │   │   ├── ospf
+│   │   │   ├── stp
+│   │   │   ├── rip
+│   │   │   ├── ipsec
+│   │   │   ├── tcp
+│   │   │   ├── udp
+│   │   │   ├── socks
+│   │   │   ├── ssl_and_tls
+│   │   │   ├── afp
+│   │   │   ├── rtmp
+│   │   │   ├── http
+│   │   │   ├── dns
+│   │   │   ├── ssh
+│   │   │   ├── rdp
+│   │   │   ├── ftp
+│   │   │   ├── 802_1x
+│   │   │   ├── https
+│   │   │   ├── http_2
+│   │   │   ├── nfs
+│   │   │   ├── smb
+│   │   │   ├── pop_3
+│   │   │   ├── imap
+│   │   │   ├── smtp
+│   │   │   ├── dhcp
+│   │   │   ├── snmp
+│   │   │   ├── bgp
+│   │   │   ├── mdns
+│   │   │   └── kerberos
+│   │   ├── firewalls
+│   │   │   ├── stateful_vs_stateless
+│   │   │   ├── dpi
+│   │   │   └── dlp
+│   │   ├── email_security
+│   │   │   ├── blocking
+│   │   │   ├── purging
+│   │   │   └── spoofing
+│   │   │       ├── spf
+│   │   │       ├── dkim
+│   │   │       └── dmarc
+│   │   ├── ddos
+│   │   │   ├── network_saturation
+│   │   │   ├── standard_flood
+│   │   │   ├── amplification_attacks
+│   │   │   └── mitigations
+│   │   └── analysis
+│   │       ├── ids
+│   │       ├── ips
+│   │       └── flow_analysis
+│   ├── cryptography
+│   │   ├── symmetric_cryptography
+│   │   ├── asymmetric_cryptography
+│   │   ├── hashing
+│   │   ├── distance_based_hashing
+│   │   ├── steganography
+│   │   ├── key_exchange
+│   │   ├── key_derivation
+│   │   ├── forward_secrecy
+│   │   ├── rngs_and_prngs
+│   │   ├── cryptographic_attacks
+│   │   ├── pki_and_cas
+│   │   └── file_formats
+│   ├── operating_systems
+│   │   ├── computer_architecture
+│   │   │   ├── bios
+│   │   │   ├── nvram
+│   │   │   └── boot_loader
+│   │   ├── hardware
+│   │   │   ├── cpu
+│   │   │   ├── ram
+│   │   │   ├── storage
+│   │   │   ├── nic
+│   │   │   ├── pci
+│   │   │   └── usb
+│   │   ├── kernel
+│   │   │   ├── drivers
+│   │   │   ├── network_io
+│   │   │   ├── syscalls
+│   │   │   └── memory_protection
+│   │   ├── run_levels
+│   │   ├── init_systems
+│   │   │   ├── windows
+│   │   │   ├── launchd
+│   │   │   ├── sysvinit
+│   │   │   ├── systemd
+│   │   │   └── upstart
+│   │   ├── permissions
+│   │   ├── security_features
+│   │   │   ├── trusted_boot
+│   │   │   ├── code_signing
+│   │   │   ├── windows_security_policy
+│   │   │   ├── chroot
+│   │   │   ├── jails
+│   │   │   ├── sudo
+│   │   │   ├── selinux_and_apparmor
+│   │   │   └── mandatory_access_controls
+│   │   ├── strengths_and_weaknesses
+│   │   │   ├── windows
+│   │   │   ├── macos
+│   │   │   └── linux
+│   │   └── virtualization
+│   │       ├── full
+│   │       │   ├── vmware
+│   │       │   ├── virtualbox
+│   │       │   └── hyperv
+│   │       └── containers
+│   │           ├── docker
+│   │           ├── cgroups
+│   │           └── kubernetes
+│   ├── application_security
+│   │   ├── command_injection
+│   │   ├── sql_injection
+│   │   │   ├── blind_sqli
+│   │   │   └── tools
+│   │   ├── remote_file_inclusion
+│   │   ├── local_file_inclusion
+│   │   ├── cross_site_scripting
+│   │   ├── cross_site_request_forgery
+│   │   ├── input_sanitization_vs_output_encoding
+│   │   ├── buffer_overflows
+│   │   ├── application_dos
+│   │   ├── shell_code
+│   │   │   ├── x_64__vs_x_86
+│   │   │   ├── registers
+│   │   │   └── stack_structure
+│   │   ├── user_uploaded_content_processing
+│   │   └── automation
+│   │       ├── static_analysis
+│   │       ├── testing_tools
+│   │       └── revision_control_techniques
+│   └── enterprise_security
+│       ├── authn_and_authz
+│       │   ├── sso
+│       │   │   ├── saml
+│       │   │   └── oauth_2
+│       │   ├── cookie_vs_session
+│       │   ├── federation
+│       │   ├── pki_integration
+│       │   ├── pam
+│       │   └── mfa
+│       │       ├── totp
+│       │       ├── sms
+│       │       └── biometric
+│       ├── directory_services
+│       │   ├── structure
+│       │   │   ├── ou
+│       │   │   ├── object
+│       │   │   ├── distinguished_name
+│       │   │   ├── common_name
+│       │   │   ├── domain
+│       │   │   └── forest
+│       │   ├── account_types
+│       │   │   ├── domain_administrator
+│       │   │   ├── domain_user
+│       │   │   ├── local_user
+│       │   │   └── local_administrator
+│       │   ├── trust_types
+│       │   │   ├── transitive
+│       │   │   ├── non_transitive
+│       │   │   ├── one_way
+│       │   │   └── two_way
+│       │   └── trusts
+│       │       ├── parent_child
+│       │       ├── tree_root
+│       │       ├── shortcut
+│       │       ├── external
+│       │       ├── forest
+│       │       └── realm
+│       └── remote_access
+│           ├── vpns
+│           │   ├── ipsec
+│           │   ├── pptp
+│           │   ├── layer_2_tunnel_protocol
+│           │   ├── split_tunnel_vs_full_tunnel
+│           │   └── split_horizon_dns
+│           ├── bastion
+│           └── mutual_tls_authentication
+├── software_engineering
+│   ├── common_languages
+│   │   ├── python
+│   │   ├── ruby
+│   │   ├── java
+│   │   ├── c_and_c_plus_plus
+│   │   ├── go
+│   │   ├── bash
+│   │   ├── powershell
+│   │   ├── sql
+│   │   ├── javascript
+│   │   └── nodejs
+│   ├── compilers
+│   │   ├── frontend
+│   │   ├── backend
+│   │   ├── intermediate_representation
+│   │   │   ├── bytecode
+│   │   │   └── runtimes_and_vm
+│   │   ├── optimization
+│   │   │   ├── inlining
+│   │   │   └── memory
+│   │   └── type_safety
+│   ├── interpreters
+│   │   └── types
+│   │       ├── bytecode
+│   │       ├── abstract_syntax_tree
+│   │       └── jit
+│   ├── concurrency
+│   │   ├── thread
+│   │   ├── process
+│   │   ├── fiber
+│   │   └── semaphores
+│   ├── data_types
+│   │   ├── primatives
+│   │   ├── signed_vs_unsigned
+│   │   ├── int_size
+│   │   ├── encoding
+│   │   │   ├── ascii
+│   │   │   ├── utf_8
+│   │   │   ├── base_64
+│   │   │   ├── base_32
+│   │   │   ├── json
+│   │   │   └── csv
+│   │   ├── arrays
+│   │   ├── maps
+│   │   ├── trees
+│   │   └── strings
+│   ├── pointers
+│   │   ├── garbage_collection_implications
+│   │   ├── pass_by_value_vs_pass_by_reference
+│   │   └── function_pointers
+│   ├── testing
+│   │   ├── unit_tests
+│   │   ├── integration_tests
+│   │   ├── negative_test_cases
+│   │   └── bigo_complexity
+│   ├── modeling
+│   │   ├── recursion
+│   │   ├── object_orientation
+│   │   ├── interfaces
+│   │   ├── inheritance
+│   │   ├── polymorphism
+│   │   ├── reflection
+│   │   └── serialization
+│   ├── processing
+│   │   ├── sync_vs_async
+│   │   ├── regular_expressions
+│   │   └── buffered_io
+│   └── distributed
+│       ├── shared_queues
+│       │   ├── at_least_once_vs_at_most_once
+│       │   └── performance_and_scaling
+│       └── shared_state
+│           ├── locks
+│           ├── race_conditions
+│           ├── consistency
+│           └── distributed_storage_engines
+└── systems_engineering
+    ├── configuration_management
+    │   └── state_management
+    │       ├── chef
+    │       ├── salt
+    │       ├── puppet
+    │       ├── ansible
+    │       └── sccm
+    ├── infrastructure_automation
+    │   ├── terraform
+    │   └── ansible
+    ├── revision_control
+    │   ├── git
+    │   │   ├── pull
+    │   │   ├── push
+    │   │   ├── add
+    │   │   ├── commit
+    │   │   └── diff
+    │   ├── code_review
+    │   └── continuous_integration
+    ├── databases
+    │   ├── rdbs
+    │   │   ├── normalization
+    │   │   ├── mysql
+    │   │   ├── postgresql
+    │   │   ├── mssql
+    │   │   ├── authentication
+    │   │   └── data_security
+    │   ├── nosql
+    │   │   ├── redis
+    │   │   ├── mongodb
+    │   │   └── cassandra
+    │   ├── high_availability
+    │   │   ├── master_slave
+    │   │   ├── multi_slave_single_master
+    │   │   └── multi_master
+    │   └── acid
+    │       ├── atomicity
+    │       ├── consistency
+    │       ├── isolation
+    │       └── durability
+    ├── endpoint_management
+    │   ├── mac
+    │   │   ├── jamf
+    │   │   └── apple_mdm
+    │   ├── windows
+    │   │   ├── gpo
+    │   │   └── sccm
+    │   └── mobile
+    │       ├── mdm
+    │       └── provisioning
+    └── cloud
+        ├── infrastructure
+        │   ├── providers
+        │   │   ├── aws
+        │   │   ├── gcp
+        │   │   └── azure
+        │   └── technologies
+        │       ├── object_storage
+        │       ├── compute_resources
+        │       ├── virtual_private_clouds
+        │       ├── network_acls
+        │       ├── host_based_acls
+        │       ├── elastic_ips
+        │       ├── iam
+        │       ├── load_balancers
+        │       └── lambda_functions
+        └── apps
+            ├── gsuite
+            │   ├── google_drive
+            │   ├── google_sheets
+            │   └── gmail
+            └── storage
+                ├── dropbox
+                └── box

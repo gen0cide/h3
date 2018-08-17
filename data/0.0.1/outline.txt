@@ -1,0 +1,465 @@
+Blue Team
+	Monitoring
+		Host
+			Windows
+			Linux
+			macOS
+		Application
+			Web
+			Enterprise
+			Remote Access
+		Network
+			Packet Capture
+				HA And Scalability
+				Common Tools
+				Source Spoofing Considerations
+			Valuable Protocols
+		Logging
+			Architecture
+			Formatting
+			Processing
+			Searching
+			Storage
+	Detection
+		Techniques
+			Static Signature
+			Anomaly based
+			Behavioral
+			Machine Learning
+		Automation
+			APIs
+			Scripting
+		Scalability
+	Response
+		Reverse Engineering
+			Static Analysis
+			Dynamic Analysis
+			Evasion
+			Protocol Analysis
+		Remediation
+			Pyramid of Pain
+			IR Life-cycle
+			Containment Techniques
+			Eradication Principles
+		Crisis
+			Communication
+			Priority
+			Documentation
+	Threat Intel
+		OPSEC
+			Host
+			Network
+			Geographic Considerations
+			Fingerprinting
+			Persona Management
+		IOC Sharing
+		Traffic Light Protocol
+		Severities vs Impact
+	Forensics
+		Legal
+			Chain of Custody
+			Privilege
+			Diligence And Documentation
+		Collection
+			Desktop OSes
+			Mobile OSes
+			Network
+			Memory
+			Encryption
+		Analysis
+			Steganography
+			Data Carving
+			Memory
+			Temporal Analysis
+			Deobfuscation
+			File Systems
+				Boot Records
+				File Tables
+				Inodes
+				Encrypted Volumes
+				Slack Space
+Red Team
+	Objectives
+		Scope
+		Rules of Engagement
+		Statement of Work
+	OSINT
+	Vulnerability Analysis
+	Exploitation
+		Remote
+		Local Privilege Escalation
+		Web
+		Phishing
+	Attack
+		Lateral Movement
+		Tunneling
+		Covering Tracks
+		Avoiding Detection
+		Client Considerations
+	Persist
+		Windows
+		Linux
+		macOS
+		Web
+		Code
+		Configs
+	Post Exploitation
+		Files
+		OS Creds
+		Enterprise Creds
+		Application Creds
+	Implants
+		Stagers And Droppers
+		User-space vs Kernel-space
+		Local vs Remote
+		Reverse vs Bind
+		Command And Control
+			Covert Channels
+			Avoiding Detection
+			Anti-tampering
+		Anti-RE Techniques
+			Packing And Encrypting
+			Process Injection
+				macOS
+				Windows
+				Linux
+Security Engineering
+	Networking
+		OSI Model
+		Stateful vs Stateless
+		Important Protocols
+			CSMA CA
+			CSMA CD
+			802_11
+			Ethernet II And 802_3
+			ARP
+			ICMP
+			IP
+			OSPF
+			STP
+			RIP
+			IPSec
+			TCP
+			UDP
+			SOCKS
+			SSL And TLS
+			AFP
+			RTMP
+			HTTP
+			DNS
+			SSH
+			RDP
+			FTP
+			802_1X
+			HTTPS
+			HTTP2
+			NFS
+			SMB
+			POP3
+			IMAP
+			SMTP
+			DHCP
+			SNMP
+			BGP
+			mDNS
+			Kerberos
+		Firewalls
+			Stateful vs Stateless
+			DPI
+			DLP
+		Email Security
+			Blocking
+			Purging
+			Spoofing
+				SPF
+				DKIM
+				DMARC
+		DDoS
+			Network Saturation
+			Standard Flood
+			Amplification Attacks
+			Mitigations
+		Analysis
+			IDS
+			IPS
+			Flow Analysis
+	Cryptography
+		Symmetric Cryptography
+		Asymmetric Cryptography
+		Hashing
+		Distance Based Hashing
+		Steganography
+		Key Exchange
+		Key Derivation
+		Forward Secrecy
+		RNGs and PRNGs
+		Cryptographic Attacks
+		PKI And CAs
+		File Formats
+	Operating Systems
+		Computer Architecture
+			BIOS
+			NVRAM
+			Boot Loader
+		Hardware
+			CPU
+			RAM
+			Storage
+			NIC
+			PCI
+			USB
+		Kernel
+			Drivers
+			Network IO
+			Syscalls
+			Memory Protection
+		Run Levels
+		Init Systems
+			Windows
+			launchd
+			sysvinit
+			systemd
+			upstart
+		Permissions
+		Security Features
+			Trusted Boot
+			Code Signing
+			Windows Security Policy
+			chroot
+			jails
+			sudo
+			selinux and apparmor
+			mandatory access controls
+		Strengths And Weaknesses
+			Windows
+			macOS
+			Linux
+		Virtualization
+			Full
+				VMWare
+				VirtualBox
+				HyperV
+			Containers
+				Docker
+				CGroups
+				Kubernetes
+	Application Security
+		Command Injection
+		SQL Injection
+			Blind SQLi
+			Tools
+		Remote File Inclusion
+		Local File Inclusion
+		Cross Site Scripting
+		Cross Site Request Forgery
+		Input Sanitization vs Output Encoding
+		Buffer Overflows
+		Application DoS
+		Shell code
+			x64 vs x86
+			registers
+			stack structure
+		user uploaded content processing
+		Automation
+			Static Analysis
+			Testing Tools
+			Revision Control Techniques
+	Enterprise Security
+		AuthN And AuthZ
+			SSO
+				SAML
+				OAUTH2
+			Cookie vs Session
+			Federation
+			PKI Integration
+			PAM
+			MFA
+				TOTP
+				SMS
+				Biometric
+		Directory Services
+			Structure
+				OU
+				Object
+				Distinguished Name
+				Common Name
+				Domain
+				Forest
+			Account Types
+				Domain Administrator
+				Domain User
+				Local User
+				Local Administrator
+			Trust Types
+				Transitive
+				Non-Transitive
+				One Way
+				Two Way
+			Trusts
+				Parent-Child
+				Tree-Root
+				Shortcut
+				External
+				Forest
+				Realm
+		Remote Access
+			VPNs
+				IPSec
+				PPTP
+				Layer 2 Tunnel Protocol
+				Split Tunnel vs Full Tunnel
+				Split Horizon DNS
+			Bastion
+			Mutual TLS Authentication
+Software Engineering
+	Common Languages
+		Python
+		Ruby
+		Java
+		C And C Plus Plus
+		Go
+		BASH
+		Powershell
+		SQL
+		Javascript
+		NodeJS
+	Compilers
+		Frontend
+		Backend
+		Intermediate Representation
+			Bytecode
+			Runtimes And VM
+		Optimization
+			Inlining
+			Memory
+		Type Safety
+	Interpreters
+		Types
+			Bytecode
+			Abstract Syntax Tree
+			JIT
+	Concurrency
+		Thread
+		Process
+		Fiber
+		Semaphores
+	Data Types
+		Primatives
+		Signed vs Unsigned
+		Int Size
+		Encoding
+			ASCII
+			UTF-8
+			Base64
+			Base32
+			JSON
+			CSV
+		Arrays
+		Maps
+		Trees
+		Strings
+	Pointers
+		Garbage Collection Implications
+		Pass By Value vs Pass By Reference
+		Function Pointers
+	Testing
+		Unit Tests
+		Integration Tests
+		Negative Test Cases
+		BigO Complexity
+	Modeling
+		Recursion
+		Object Orientation
+		Interfaces
+		Inheritance
+		Polymorphism
+		Reflection
+		Serialization
+	Processing
+		Sync vs Async
+		Regular Expressions
+		Buffered IO
+	Distributed
+		Shared Queues
+			At Least Once vs At Most Once
+			Performance And Scaling
+		Shared State
+			Locks
+			Race Conditions
+			Consistency
+			Distributed Storage Engines
+Systems Engineering
+	Configuration Management
+		State Management
+			Chef
+			Salt
+			Puppet
+			Ansible
+			SCCM
+	Infrastructure Automation
+		Terraform
+		Ansible
+	Revision Control
+		Git
+			Pull
+			Push
+			Add
+			Commit
+			Diff
+		Code Review
+		Continuous Integration
+	Databases
+		RDBS
+			Normalization
+			MySQL
+			PostgreSQL
+			MSSQL
+			Authentication
+			Data Security
+		NoSQL
+			Redis
+			MongoDB
+			Cassandra
+		High Availability
+			Master-Slave
+			Multi-Slave Single Master
+			Multi Master
+		ACID
+			Atomicity
+			Consistency
+			Isolation
+			Durability
+	Endpoint Management
+		Mac
+			JAMF
+			Apple MDM
+		Windows
+			GPO
+			SCCM
+		Mobile
+			MDM
+			Provisioning
+	Cloud
+		Infrastructure
+			Providers
+				AWS
+				GCP
+				Azure
+			Technologies
+				Object Storage
+				Compute Resources
+				Virtual Private Clouds
+				Network ACLs
+				Host-based ACLs
+				Elastic IPs
+				IAM
+				Load Balancers
+				Lambda Functions
+		Apps
+			GSuite
+				Google Drive
+				Google Sheets
+				GMail
+			Storage
+				Dropbox
+				Box
